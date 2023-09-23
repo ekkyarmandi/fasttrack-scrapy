@@ -3,9 +3,10 @@
 Data scraping script developed using Scrapy to collect dog race data from [fasttrack.grv.org.au](https://fasttrack.grv.org.au)
 
 This project one is one of my data scraping experience in my career. You can find my other data scraping project in the list below:
-- [fasttrack](https://github.com/ekkyarmandi/fasttrack-scrapy.git), dog race data scraping  
 
-\**The rest will come*\*
+- [fasttrack](https://github.com/ekkyarmandi/fasttrack-scrapy.git), dog race data scraping
+
+\*_The rest will come_\*
 
 ## Todo
 
@@ -28,7 +29,7 @@ pip install -r requirements.txt
 
 2. Define the `from_date` and `to_date` inside the [fasttrack.py](fasttrack.py)
 
-```
+```python
 class FastTrackCrawler(scrapy.Spider):
     name = "fasttrack"
     allowed_domains = ["fasttrack.grv.org.au"]
@@ -42,6 +43,6 @@ class FastTrackCrawler(scrapy.Spider):
 
 3. Run the script
 
-```
+```bash
 python fasttrack.py
 ```
